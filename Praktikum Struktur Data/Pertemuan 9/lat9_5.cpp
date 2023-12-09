@@ -2,7 +2,7 @@
 #include <iomanip>
 using namespace std;
 
-// Deklarasi prototipe fungsi
+void Identitas();
 void shellSortMenaik();
 void shellSortMenurun();
 void insertionSortMenaik();
@@ -10,7 +10,11 @@ void insertionSortMenurun();
 
 int main() {
     int choice;
-
+	cout << "================================================================" << endl;
+	cout << "Tugas Praktikum Pertemuan 9 lat9_5" << endl;
+    Identitas();
+    cout << "================================================================" << endl << endl;
+    	
     do {
         cout << "Menu Program:\n";
         cout << "1. Shell Sort Menaik\n";
@@ -20,6 +24,9 @@ int main() {
         cout << "5. Keluar\n";
         cout << "Pilih program (1-4) atau Keluar (5): ";
         cin >> choice;
+        
+        cout << endl;
+    	cout << "================================================================" << endl << endl;
 
         switch (choice) {
             case 1:
@@ -35,17 +42,28 @@ int main() {
                 insertionSortMenurun();
                 break;
             case 5:
-                cout << "Keluar dari program. Sampai jumpa!" << endl;
+                cout << "Program Telah Selesai. Terima Kasih Sudah Menggunakan." << endl;
                 break;
             default:
-                cout << "Pilihan tidak valid. Silakan pilih kembali." << endl;
+                cout << "Pilihan tidak valid. Silakan pilih lagi." << endl;
         }
+        
+        cout << endl;
+    	cout << "================================================================" << endl;
+    	cout << endl;
     } while (choice != 5);
 
     return 0;
 }
 
-// Definisi fungsi-fungsi
+void Identitas() {
+	cout << "Tugas Praktikum Pertemuan 9 lat9_5" << endl;
+    cout << "=====================================" << endl;
+    cout << "Nama  : Ryanda Deanova" << endl;
+    cout << "NIM   : 211011450036" << endl;
+    cout << "Kelas : 04TPLP001" << endl;
+    cout << "=====================================" << endl << endl;
+}
 
 void shellSortMenaik() {
     int Nilai[20];
@@ -53,12 +71,6 @@ void shellSortMenaik() {
     int temp, jarak, s;
 
     cout << "Pengurutan Metode Shell Sort Menaik" << endl;
-
-    cout << "Tugas Praktikum Pertemuan 9 lat9_1" << endl;
-    cout << "Nama    : Ryanda Deanova" << endl;
-    cout << "NIM     : 211011450036" << endl;
-    cout << "Kelas   : 04TPLP001" << endl << endl;
-
     cout << "Masukkan Banyak Bilangan : ";
     cin >> N;
 
@@ -105,6 +117,8 @@ void shellSortMenaik() {
     cout << "\nData Setelah diurut : ";
     for (i = 0; i < N; i++)
         cout << setw(4) << Nilai[i];
+    
+    cout << endl;
 }
 
 void shellSortMenurun() {
@@ -113,12 +127,6 @@ void shellSortMenurun() {
     int temp, jarak, s;
 
     cout << "Pengurutan Metode Shell Sort Menurun" << endl;
-
-    cout << "Tugas Praktikum Pertemuan 9 lat9_2" << endl;
-    cout << "Nama    : Ryanda Deanova" << endl;
-    cout << "NIM     : 211011450036" << endl;
-    cout << "Kelas   : 04TPLP001" << endl << endl;
-
     cout << "Masukan Banyak Bilangan : ";
     cin >> N;
 
@@ -162,6 +170,8 @@ void shellSortMenurun() {
     cout << "\nData Setelah diurut : ";
     for (i = 0; i < N; i++)
         cout << setw(4) << Nilai[i];
+        
+    cout << endl;
 }
 
 void insertionSortMenaik() {
@@ -170,12 +180,6 @@ void insertionSortMenaik() {
     int temp;
 
     cout << "Pengurutan Metode Insertion Sort (Penyisipan) Menaik" << endl;
-
-    cout << "Tugas Praktikum Pertemuan 9 lat9_3" << endl;
-    cout << "Nama    : Ryanda Deanova" << endl;
-    cout << "NIM     : 211011450036" << endl;
-    cout << "Kelas   : 04TPLP001" << endl << endl;
-
     cout << "Masukan Banyak Bilangan: ";
     cin >> N;
 
@@ -209,6 +213,8 @@ void insertionSortMenaik() {
     cout << "\nData Setelah diurut: ";
     for (i = 0; i < N; i++)
         cout << setw(3) << Nilai[i];
+        
+    cout << endl;
 }
 
 void insertionSortMenurun() {
@@ -217,12 +223,6 @@ void insertionSortMenurun() {
     int temp;
 
     cout << "Pengurutan Metode Insertion Sort (Penyisipan) Menurun" << endl;
-
-    cout << "Tugas Praktikum Pertemuan 9 lat9_4" << endl;
-    cout << "Nama    : Ryanda Deanova" << endl;
-    cout << "NIM     : 211011450036" << endl;
-    cout << "Kelas   : 04TPLP001" << endl << endl;
-
     cout << "Masukkan Banyak Bilangan : ";
     cin >> N;
 
@@ -256,5 +256,6 @@ void insertionSortMenurun() {
     cout << "\nData Setelah diurut : ";
     for (i = 0; i < N; i++)
         cout << setw(3) << Nilai[i];
+        
+    cout << endl;
 }
-

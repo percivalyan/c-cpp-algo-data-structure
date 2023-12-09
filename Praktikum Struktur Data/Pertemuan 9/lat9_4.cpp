@@ -11,9 +11,11 @@ int main()
     cout << "Pengurutan Metode Insertion Sort (Penyisipan) Menurun" << endl;
     
     cout << "Tugas Praktikum Pertemuan 9 lat9_4" << endl;
-    cout << "Nama    : Ryanda Deanova" << endl;
-    cout << "NIM     : 211011450036" << endl;
-    cout << "Kelas   : 04TPLP001" << endl << endl;
+    cout << "=====================================" << endl;
+    cout << "Nama  : Ryanda Deanova" << endl;
+    cout << "NIM   : 211011450036" << endl;
+    cout << "Kelas : 04TPLP001" << endl;
+    cout << "=====================================" << endl << endl;
     
     cout << "Masukkan Banyak Bilangan : ";
     cin >> N;

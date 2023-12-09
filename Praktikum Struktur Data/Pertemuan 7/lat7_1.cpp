@@ -7,10 +7,12 @@
 using namespace std;  
 
 void identitas(){
-	cout<<"Tugas Praktikum Latihan 7_1"<<endl;
-    cout<<"Nama    : Ryanda Deanova"<<endl;
-    cout<<"NIM     : 211011450036"<<endl;
-    cout<<"Kelas   : 04TPLP001"<<endl<<endl;
+	cout << "Tugas Praktikum Pertemuan 7 lat7_1" << endl;
+    cout << "=====================================" << endl;
+    cout << "Nama  : Ryanda Deanova" << endl;
+    cout << "NIM   : 211011450036" << endl;
+    cout << "Kelas : 04TPLP001" << endl;
+    cout << "=====================================" << endl << endl;
 };
 
 //Menaik

@@ -1,10 +1,6 @@
-//Buatlah program untuk Operasi Doubly Linked (simpan dengan nama lat10_2.cpp)
 #include<iostream>
 #include<conio.h>
 #include<stdlib.h>
-
-#define true 1
-#define false 0
 
 using namespace std;
 
@@ -16,9 +12,7 @@ struct node {
     simpul kiri;
 };
 
-//=====================
-//==Prototype Function=
-//=====================
+// Prototipe Fungsi
 void Sisip_Depan(simpul &DL, char elemen);
 void Sisip_Belakang(simpul &DL, char elemen);
 void Sisip_Tengah1(simpul &DL, char elemen1, char elemen2);
@@ -28,15 +22,14 @@ void Hapus_Belakang(simpul &DL);
 void Hapus_Tengah(simpul &DL, char elemen);
 void Cetak(simpul DL);
 
-// Function Main
+// Fungsi Utama
 int main() {
     char huruf, huruf2;
-    simpul DL = NULL; // Pastikan bahwa DL kosong
+    simpul DL = NULL;
     int i;
 
     cout << "\t\t==OPERASI PADA DOUBLY LINKED LIST==\n\n";
-    
-    cout << "Tugas Praktikum Pertemuan 10 lat10_2" << endl;
+    cout << "Tugas Praktikum Pertemuan 11 lat11_1" << endl;
     cout << "=====================================" << endl;
     cout << "Nama  : Ryanda Deanova" << endl;
     cout << "NIM   : 211011450036" << endl;
@@ -46,7 +39,7 @@ int main() {
     // Sisip Depan
     cout << "Penyisipan Simpul Di Depan" << endl << endl;
     for (i = 1; i <= 4; i++) {
-        cout << "Masukan Huruf : ";
+        cout << "Masukkan Huruf : ";
         cin >> huruf;
         Sisip_Depan(DL, huruf);
     }
@@ -55,14 +48,14 @@ int main() {
     // Sisip Belakang
     cout << "\n\nPenyisipan Simpul Di Belakang" << endl << endl;
     for (i = 1; i <= 4; i++) {
-        cout << "Masukan Huruf : ";
+        cout << "Masukkan Huruf : ";
         cin >> huruf;
         Sisip_Belakang(DL, huruf);
     }
     Cetak(DL);
 
     // Sisip Simpul Setelah Simpul Tertentu
-    cout << endl << endl << "Masukan Huruf : ";
+    cout << endl << endl << "Masukkan Huruf : ";
     cin >> huruf;
     cout << "Disisip Setelah Huruf : ";
     cin >> huruf2;
@@ -71,7 +64,7 @@ int main() {
     Cetak(DL);
 
     // Sisip Simpul Sebelum Simpul Tertentu
-    cout << endl << endl << "Masukan Huruf : ";
+    cout << endl << endl << "Masukkan Huruf : ";
     cin >> huruf;
     cout << "Disisip Sebelum Huruf : ";
     cin >> huruf2;
@@ -99,10 +92,10 @@ int main() {
     return 0;
 }
 
-// Function Sisip Simpul Di Depan
+// Fungsi Sisip Simpul Di Depan
 void Sisip_Depan(simpul &DL, char elemen) {
     simpul baru;
-    baru = (simpul)malloc(sizeof(simpul));
+    baru = (simpul)malloc(sizeof(node));
     baru->Isi = elemen;
     baru->kanan = NULL;
     baru->kiri = NULL;
@@ -116,10 +109,10 @@ void Sisip_Depan(simpul &DL, char elemen) {
     }
 }
 
-// Function Sisip Simpul Setelah Simpul Tertentu
+// Fungsi Sisip Simpul Setelah Simpul Tertentu
 void Sisip_Tengah1(simpul &DL, char elemen1, char elemen2) {
     simpul bantu, baru;
-    baru = (simpul)malloc(sizeof(simpul));
+    baru = (simpul)malloc(sizeof(node));
     baru->Isi = elemen1;
     baru->kanan = NULL;
     baru->kiri = NULL;
@@ -137,10 +130,10 @@ void Sisip_Tengah1(simpul &DL, char elemen1, char elemen2) {
     }
 }
 
-// Function Sisip Simpul Sebelum Simpul Tertentu
+// Fungsi Sisip Simpul Sebelum Simpul Tertentu
 void Sisip_Tengah2(simpul &DL, char elemen1, char elemen2) {
     simpul bantu, baru;
-    baru = (simpul)malloc(sizeof(simpul));
+    baru = (simpul)malloc(sizeof(node));
     baru->Isi = elemen1;
     baru->kanan = NULL;
     baru->kiri = NULL;
@@ -158,10 +151,10 @@ void Sisip_Tengah2(simpul &DL, char elemen1, char elemen2) {
     }
 }
 
-// Function Sisip Simpul Di Belakang
+// Fungsi Sisip Simpul Di Belakang
 void Sisip_Belakang(simpul &DL, char elemen) {
     simpul bantu, baru;
-    baru = (simpul)malloc(sizeof(simpul));
+    baru = (simpul)malloc(sizeof(node));
     baru->Isi = elemen;
     baru->kanan = NULL;
     baru->kiri = NULL;
@@ -177,7 +170,7 @@ void Sisip_Belakang(simpul &DL, char elemen) {
     }
 }
 
-// Function Mencetak Isi Linked List
+// Fungsi Mencetak Isi Linked List
 void Cetak(simpul DL) {
     simpul bantu;
     if (DL == NULL)
@@ -193,7 +186,7 @@ void Cetak(simpul DL) {
     }
 }
 
-// Function Hapus Simpul Depan
+// Fungsi Hapus Simpul Depan
 void Hapus_Depan(simpul &DL) {
     simpul Hapus;
     if (DL == NULL)
@@ -201,13 +194,14 @@ void Hapus_Depan(simpul &DL) {
     else {
         Hapus = DL;
         DL = DL->kanan;
-        DL->kiri = NULL;
+        if (DL != NULL)
+            DL->kiri = NULL;
         Hapus->kanan = NULL;
         free(Hapus);
     }
 }
 
-// Function Hapus Simpul Belakang
+// Fungsi Hapus Simpul Belakang
 void Hapus_Belakang(simpul &DL) {
     simpul bantu, hapus;
     if (DL == NULL)
@@ -218,26 +212,33 @@ void Hapus_Belakang(simpul &DL) {
             bantu = bantu->kanan;
         hapus = bantu->kanan;
         bantu->kanan = NULL;
-        hapus->kiri = NULL;
+        if (hapus != NULL)
+            hapus->kiri = NULL;
         free(hapus);
     }
 }
 
-// Function Hapus Simpul Di Tengah
+// Fungsi Hapus Simpul Di Tengah
 void Hapus_Tengah(simpul &DL, char elemen) {
     simpul bantu, hapus;
     if (DL == NULL)
         cout << "Linked List Kosong.............";
     else {
         bantu = DL;
-        while (bantu->kanan->Isi != elemen)
+        while (bantu->kanan != NULL && bantu->Isi != elemen)
             bantu = bantu->kanan;
-        hapus = bantu->kanan;
-        bantu->kanan->kanan->kiri = bantu;
-        bantu->kanan = bantu->kanan->kanan;
-        hapus->kanan = NULL;
-        hapus->kiri = NULL;
-        free(hapus);
+        if (bantu->Isi == elemen) {
+            hapus = bantu;
+            if (bantu->kiri != NULL)
+                bantu->kiri->kanan = bantu->kanan;
+            if (bantu->kanan != NULL)
+                bantu->kanan->kiri = bantu->kiri;
+            hapus->kanan = NULL;
+            hapus->kiri = NULL;
+            free(hapus);
+        } else {
+            cout << "Elemen tidak ditemukan dalam Linked List";
+        }
     }
 }
 

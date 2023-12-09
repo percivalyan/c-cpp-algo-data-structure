@@ -1,222 +1,203 @@
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
-void MaximumSortMenaik(){
-	int Nilai[20];
-    int i, j, N, l;
-    int temp, U, Imaks;
-    
-	cout<<"Metode Maximum Sort - Pengurutan Secara Menaik"<<endl;
-	
-    cout<<"Masukkan Banyaknya Bilangan: ";
-    cin>>N;
+void identitas(){
+	cout << "Tugas Praktikum Pertemuan 7 lat7_5" << endl;
+    cout << "=====================================" << endl;
+    cout << "Nama  : Ryanda Deanova" << endl;
+    cout << "NIM   : 211011450036" << endl;
+    cout << "Kelas : 04TPLP001" << endl;
+    cout << "=====================================" << endl << endl;
+};
 
-    for(i = 0; i < N; i++)
-    {
-        cout<<"Elemen ke-" <<i+1<< " : "; //+1
-        cin>>Nilai[i];
+void MaximumSortMenaik() {
+    int Nilai[20];
+    int i, j, N;
+    int temp, U, Imaks;
+	
+    cout << "Metode Maximum Sort - Pengurutan Secara Menaik" << endl;
+
+    cout << "Masukkan Banyaknya Bilangan: ";
+    cin >> N;
+
+    for (i = 0; i < N; i++) {
+        cout << "Elemen ke-" << i + 1 << " : ";
+        cin >> Nilai[i];
     }
 
-    //Proses Cetak sebelum diurutkan
-    cout<<"\nData sebelum diurutkan: ";
-    for(i = 0; i < N; i++)
-        cout<<setw(3)<<Nilai[i];
+    // Proses Cetak sebelum diurutkan
+    cout << "\nData sebelum diurutkan: ";
+    for (i = 0; i < N; i++)
+        cout << setw(3) << Nilai[i];
 
-    //Proses Pengurutan
+    // Proses Pengurutan
     U = N - 1;
-    for(i = 0; i <= N - 2; i++)
-    {
+    for (i = 0; i <= N - 2; i++) {
         Imaks = 0;
-        for(j = 1; j <= U; j++)
-        {
-            if(Nilai[j] > Nilai[Imaks])
+        for (j = 1; j <= U; j++) {
+            if (Nilai[j] > Nilai[Imaks])
                 Imaks = j;
         }
         temp = Nilai[U];
         Nilai[U] = Nilai[Imaks];
         Nilai[Imaks] = temp;
         U--;
-	//Perubahan (tidak diperlukan)
-//        cout << endl;
-//        for (l = 0; l < N; l++)
-//            cout << setw(3) << Nilai[l];
     }
-	
-    cout<< "\nData Setelah diurutkan: ";
-    for(i = 0; i < N; i++)
-        cout<<setw(3)<<Nilai[i];
 
-    getch();
+    cout << "\nData Setelah diurutkan: ";
+    for (i = 0; i < N; i++)
+        cout << setw(3) << Nilai[i];
+
+    cin.get(); // Menunggu input sebelum program berakhir
 }
 
-void MaximumSortMenurun();
-{
+void MaximumSortMenurun() {
     int Nilai[20];
-    int i, j, N, l;
+    int i, j, N;
     int temp, U, Imaks;
-    
-    identitas();
-    
-    cout<<"Metode Maximum Sort - Pengurutan Secara Menurun"<<endl;
 
-    cout<<"Masukan Banyaknya Bilangan : ";
-    cin>>N;
-    for(i = 0; i < N; i++)
-    {
-        cout<<"Elemen ke -"<<i+1<<" : "; //+1
-        cin>>Nilai[i];
+    cout << "Metode Maximum Sort - Pengurutan Secara Menurun" << endl;
+
+    cout << "Masukan Banyaknya Bilangan : ";
+    cin >> N;
+
+    for (i = 0; i < N; i++) {
+        cout << "Elemen ke -" << i + 1 << " : ";
+        cin >> Nilai[i];
     }
-    //Proses Cetak Sebelum diurutkan
-    cout<< "\nData Sebelum diurut : ";
-    for(i = 0; i < N; i++)
-        cout<<setw(3)<<Nilai[i];
-    //Proses pengurutan
+
+    // Proses Cetak Sebelum diurutkan
+    cout << "\nData Sebelum diurut : ";
+    for (i = 0; i < N; i++)
+        cout << setw(3) << Nilai[i];
+
+    // Proses pengurutan
     U = N - 1;
-    for(i = 0; i <= N - 2; i++)
-    {
+    for (i = 0; i <= N - 2; i++) {
         Imaks = i;
-        for (j = i + 1; j <= U; j++)
-        {
+        for (j = i + 1; j <= U; j++) {
             if (Nilai[j] > Nilai[Imaks])
                 Imaks = j;
         }
         temp = Nilai[i];
         Nilai[i] = Nilai[Imaks];
         Nilai[Imaks] = temp;
-//        cout << endl;
-//        for (l = 0; l < N; l++)
-//            cout << setw(3) << Nilai[l];
+        U--;
     }
-    cout<<"\nData Setelah diurut : ";
-    for(i = 0; i < N; i++)
-        cout<<setw(3)<<Nilai[i];
-    //return 0;
-    getch();
+
+    cout << "\nData Setelah diurut : ";
+    for (i = 0; i < N; i++)
+        cout << setw(3) << Nilai[i];
+
+    cin.get(); // Menunggu input sebelum program berakhir
 }
 
-void MinimumSortMenaik()
-{
+void MinimumSortMenaik() {
     int Nilai[20];
-    int i, j, N, l;
+    int i, j, N;
     int temp, Imin;
-    
-    identitas();
-    
-    cout<<"Metode Minimum Sort - Pengurutan Secara Menaik"<<endl;
 
-    cout<<"Masukan Banyaknya Bilangan : ";
-    cin>>N;
+    cout << "Metode Minimum Sort - Pengurutan Secara Menaik" << endl;
 
-    for(i = 0; i < N; i++)
-    {
-        cout<<"Elemen ke-"<<i+1<<" : ";
-        cin>>Nilai[i];
+    cout << "Masukan Banyaknya Bilangan : ";
+    cin >> N;
+
+    for (i = 0; i < N; i++) {
+        cout << "Elemen ke-" << i + 1 << " : ";
+        cin >> Nilai[i];
     }
 
     // Proses Cetak Sebelum Diurutkan
-    cout<<"\nData sebelum diurut :";
-    for(i = 0; i < N; i++)
-        cout<<setw(3)<<Nilai[i];
+    cout << "\nData sebelum diurut :";
+    for (i = 0; i < N; i++)
+        cout << setw(3) << Nilai[i];
 
     // Proses pengurutan
-    for(i = 0; i <= N - 2; i++)
-    {
+    for (i = 0; i <= N - 2; i++) {
         Imin = i;
-        for(j = i + 1; j < N; j++)
-        {
-            if(Nilai[j] < Nilai[Imin])
+        for (j = i + 1; j < N; j++) {
+            if (Nilai[j] < Nilai[Imin])
                 Imin = j;
         }
         temp = Nilai[i];
         Nilai[i] = Nilai[Imin];
         Nilai[Imin] = temp;
-//        cout << endl;
-//        for (l = 0; l < N; l++)
-//            cout << setw(3) << Nilai[l];
     }
 
-    cout<<"\nData Setelah diurut : ";
-    for(i = 0; i < N; i++)
-        cout<<setw(3)<<Nilai[i];
+    cout << "\nData Setelah diurut : ";
+    for (i = 0; i < N; i++)
+        cout << setw(3) << Nilai[i];
 
-    getch();
+    cin.get(); // Menunggu input sebelum program berakhir
 }
 
-void MinimumSortMenurun()
-{
+void MinimumSortMenurun() {
     int Nilai[20];
-    int i, j, N, l;
+    int i, j, N;
     int temp, U, Imin;
-    
-    identitas();
-    
-    cout<<"Metode Minimum Sort - Pengurutan Secara Menurun"<<endl;
 
-    cout<<"Masukan Banyak Bilangan : ";
-    cin>>N;
-    for(i = 0; i < N; i++)
-    {
-        cout<<"Elemen ke-"<<i<<" : ";
-        cin>>Nilai[i];
+    cout << "Metode Minimum Sort - Pengurutan Secara Menurun" << endl;
+
+    cout << "Masukan Banyak Bilangan : ";
+    cin >> N;
+    for (i = 0; i < N; i++) {
+        cout << "Elemen ke-" << i + 1 << " : ";
+        cin >> Nilai[i];
     }
 
     // Proses Cetak Sebelum diurutkan
-    cout<<"\nData sebelum diurut : ";
+    cout << "\nData sebelum diurut : ";
     for (i = 0; i < N; i++)
-        cout<<setw(3)<<Nilai[i];
+        cout << setw(3) << Nilai[i];
 
     // Proses Pengurutan
     U = N - 1;
-    for(i = 0; i <= N - 2; i++)
-    {
+    for (i = 0; i <= N - 2; i++) {
         Imin = i;
-        for (j = i + 1; j <= U; j++)
-        {
-            if(Nilai[j] < Nilai[Imin])
+        for (j = i + 1; j <= U; j++) {
+            if (Nilai[j] < Nilai[Imin])
                 Imin = j;
         }
         temp = Nilai[U];
         Nilai[U] = Nilai[Imin];
         Nilai[Imin] = temp;
         U--;
-
-//        cout << endl;
-//        for (l = 0; l < N; l++)
-//            cout << setw(3) << Nilai[l];
     }
 
-    cout<<"\nData Setelah diurut : ";
-    for(i = 0; i < N; i++)
-        cout<<setw(3)<<Nilai[i];
+    cout << "\nData Setelah diurut : ";
+    for (i = 0; i < N; i++)
+        cout << setw(3) << Nilai[i];
 
-    getch();
+    cin.get(); // Menunggu input sebelum program berakhir
 }
 
 int main() {
     int pilihan;
-
-    cout<<"Menu Program:"<<endl;
-    cout<<"1. Metode Maximum Sort - Pengurutan Secara Menaik"<<endl;
-    cout<<"2. Metode Maximum Sort - Pengurutan Secara Menurun"<<endl;
-    cout<<"3. Metode Minimum Sort - Pengurutan Secara Menaik"<<endl;
-    cout<<"4. Metode Minimum Sort - Pengurutan Secara Menaik"<<endl;
-    cout<<"Pilih program (1-4): ";
+	identitas();
+    cout << "Menu Program:" << endl;
+    cout << "1. Metode Maximum Sort - Pengurutan Secara Menaik" << endl;
+    cout << "2. Metode Maximum Sort - Pengurutan Secara Menaik" << endl;
+    cout << "2. Metode Maximum Sort - Pengurutan Secara Menurun" << endl;
+    cout << "3. Metode Minimum Sort - Pengurutan Secara Menaik" << endl;
+    cout << "4. Metode Minimum Sort - Pengurutan Secara Menurun" << endl << endl;
+    cout << "Pilih program (1-4): ";
     cin >> pilihan;
+    cout << endl;
 
     if (pilihan == 1) {
         MaximumSortMenaik();
     } else if (pilihan == 2) {
         MaximumSortMenurun();
     } else if (pilihan == 3) {
-       MinimumSortMenaik();
+        MinimumSortMenaik();
     } else if (pilihan == 4) {
-        MinimumSortMenurun()
+        MinimumSortMenurun();
     } else {
-        cout << "Pilihan tidak valid. Silakan pilih angka antara 1 hingga 4." << endl;
+        cout << "Pilihan tidak valid. Silakan pilih angka antara 1 hingga 4." << endl << endl;
     }
 
     return 0;
 }
-
 
