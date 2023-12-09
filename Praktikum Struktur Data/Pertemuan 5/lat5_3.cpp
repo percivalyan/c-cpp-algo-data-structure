@@ -5,10 +5,12 @@ using namespace std;
 int Maksimum(int a, int b, int c, long d, long int e);
 
 void Identitas(){
-	cout << "Tugas Praktikum Latihan 5_3" << endl;
-    cout << "Nama    : Ryanda Deanova" << endl;
-    cout << "NIM     : 211011450036" << endl;
-    cout << "Kelas   : 04TPLP001" << endl << endl;
+	cout << "Tugas Praktikum Pertemuan 5 lat5_3" << endl;
+    cout << "=====================================" << endl;
+    cout << "Nama  : Ryanda Deanova" << endl;
+    cout << "NIM   : 211011450036" << endl;
+    cout << "Kelas : 04TPLP001" << endl;
+    cout << "=====================================" << endl << endl;
 };
 
 int main(){

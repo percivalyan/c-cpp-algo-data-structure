@@ -7,6 +7,13 @@ int main(){
 	int i, Jumlah = 0;
 	float Rata_Rata;
 	
+	cout << "Tugas Praktikum Pertemuan 2 lat2_1" << endl;
+    cout << "=====================================" << endl;
+    cout << "Nama  : Ryanda Deanova" << endl;
+    cout << "NIM   : 211011450036" << endl;
+    cout << "Kelas : 04TPLP001" << endl;
+    cout << "=====================================" << endl << endl;
+	
 	//Menghitung jumlah
 	for (i=0 ; i <10 ; i++)
 		Jumlah += Nilai [ i ];

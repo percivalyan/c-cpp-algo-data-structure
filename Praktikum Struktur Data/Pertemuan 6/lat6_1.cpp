@@ -6,11 +6,12 @@ int main (){
 	int Nilai [ 20 ] ;
 	int i, N, angka, Bilangan ;
 	
-	cout<<"Praktikum Struktur Data"<<endl;
-	cout<<"Tugas Praktikum Pertemuan 6 Lat6_1"<<endl;
-    cout<<"Nama    : Ryanda Deanova"<<endl;
-    cout<<"NIM     : 211011450036"<<endl;
-    cout<<"Kelas   : 04TPLP001"<<endl<<endl;
+	cout << "Tugas Praktikum Pertemuan 6 lat4_1" << endl;
+    cout << "=====================================" << endl;
+    cout << "Nama  : Ryanda Deanova" << endl;
+    cout << "NIM   : 211011450036" << endl;
+    cout << "Kelas : 04TPLP001" << endl;
+    cout << "=====================================" << endl << endl;
     
 	cout<<"Masukan Banyaknya Bilangan =";
 	cin>>N;

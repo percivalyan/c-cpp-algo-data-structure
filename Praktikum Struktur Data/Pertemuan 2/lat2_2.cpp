@@ -8,6 +8,13 @@ int main(){
 	
 	float Rata_Rata;
 	
+	cout << "Tugas Praktikum Pertemuan 2 lat2_2" << endl;
+    cout << "=====================================" << endl;
+    cout << "Nama  : Ryanda Deanova" << endl;
+    cout << "NIM   : 211011450036" << endl;
+    cout << "Kelas : 04TPLP001" << endl;
+    cout << "=====================================" << endl << endl;
+	
 	//Membaca dan menghitung jumlah
 	for (i=0 ; i<10 ; i++){
 		cout<<"Masukan elemen ke-"<<i+1<<" = ";

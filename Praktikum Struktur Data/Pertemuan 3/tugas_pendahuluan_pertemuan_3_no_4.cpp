@@ -14,7 +14,13 @@ int main()
     int i;
     Mahasiswa mhs[3];
     
-	cout<<"Ryanda Deanova_211011450036_04TPLP001"<<endl;
+	cout << "Tugas Pendahuluan Pertemuan 3 No. 4" << endl;
+    cout << "=====================================" << endl;
+    cout << "Nama  : Ryanda Deanova" << endl;
+    cout << "NIM   : 211011450036" << endl;
+    cout << "Kelas : 04TPLP001" << endl;
+    cout << "=====================================" << endl << endl;
+    
 	
     for (i = 0; i < 3; i++)
     {

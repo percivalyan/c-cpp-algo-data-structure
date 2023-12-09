@@ -22,9 +22,11 @@ int main(){
     Biodata Pegawai[5];
     int i;
     cout << "Tugas Akhir Pertemuan 3" << endl;
-    cout << "Nama	: Ryanda Deanova" << endl;
-    cout << "NIM	: 211011450036" << endl;
-    cout << "Kelas 	: 04TPLP001" <<endl;
+    cout << "=====================================" << endl;
+    cout << "Nama  : Ryanda Deanova" << endl;
+    cout << "NIM   : 211011450036" << endl;
+    cout << "Kelas : 04TPLP001" << endl;
+    cout << "=====================================" << endl << endl;
     
 	cout << "\t\t\t Program Pendataan Karyawan " << endl;
     for (i = 0; i < 2; i++)

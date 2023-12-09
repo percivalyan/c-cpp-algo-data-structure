@@ -13,10 +13,12 @@ void Baca(Mahasiswa &Mhs);
 void Cetak(Mahasiswa &Mhs);
 
 void Identitas(){
-	cout << "Tugas Praktikum Latihan 5_6" << endl;
-    cout << "Nama    : Ryanda Deanova" << endl;
-    cout << "NIM     : 211011450036" << endl;
-    cout << "Kelas   : 04TPLP001" << endl << endl;
+	cout << "Tugas Praktikum Pertemuan 5 lat5_6" << endl;
+    cout << "=====================================" << endl;
+    cout << "Nama  : Ryanda Deanova" << endl;
+    cout << "NIM   : 211011450036" << endl;
+    cout << "Kelas : 04TPLP001" << endl;
+    cout << "=====================================" << endl << endl;
 };
 
 int main(){

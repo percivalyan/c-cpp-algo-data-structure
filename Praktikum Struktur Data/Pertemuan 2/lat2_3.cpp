@@ -5,6 +5,13 @@ using namespace std;
 int main(){
 	int Nilai [20];
 	int i, N, Terbesar;
+	
+	cout << "Tugas Praktikum Pertemuan 2 lat2_3" << endl;
+    cout << "=====================================" << endl;
+    cout << "Nama  : Ryanda Deanova" << endl;
+    cout << "NIM   : 211011450036" << endl;
+    cout << "Kelas : 04TPLP001" << endl;
+    cout << "=====================================" << endl << endl;
 
 	cout<<"Masukan Banyaknya Bilangan = ";
 	cin>>N;

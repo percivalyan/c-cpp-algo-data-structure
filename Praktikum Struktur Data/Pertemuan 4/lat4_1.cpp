@@ -8,10 +8,12 @@ int main (){
 	xPtr = &x;
 	yPtr = &y;
 	
-	cout << "Tugas Praktikum Latihan 4_1" << endl;
-    cout << "Nama	: Ryanda Deanova" << endl;
-    cout << "NIM	: 211011450036" << endl;
-    cout << "Kelas 	: 04TPLP001" <<endl<<endl;
+	cout << "Tugas Praktikum Pertemuan 4 lat4_1" << endl;
+    cout << "=====================================" << endl;
+    cout << "Nama  : Ryanda Deanova" << endl;
+    cout << "NIM   : 211011450036" << endl;
+    cout << "Kelas : 04TPLP001" << endl;
+    cout << "=====================================" << endl << endl;
     
 	cout<<"Nilai x = "<< x <<endl ;
 	cout<<"Alamat x = "<<&x<<endl ;

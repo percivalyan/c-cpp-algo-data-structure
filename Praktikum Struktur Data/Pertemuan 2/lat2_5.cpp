@@ -6,6 +6,13 @@ int main() {
     //Menetapkan ukuran matriks
     const int baris = 3;
     const int kolom = 4;
+    
+    cout << "Tugas Praktikum Pertemuan 2 lat2_5" << endl;
+    cout << "=====================================" << endl;
+    cout << "Nama  : Ryanda Deanova" << endl;
+    cout << "NIM   : 211011450036" << endl;
+    cout << "Kelas : 04TPLP001" << endl;
+    cout << "=====================================" << endl << endl;
 
     //Mendeklarasikan matriks dengan ukuran yang telah ditentukan
     int matriks[baris][kolom] = {

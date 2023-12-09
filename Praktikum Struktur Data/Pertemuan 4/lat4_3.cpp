@@ -9,10 +9,12 @@ int main (){
 	int i;
 	Ptr_Nilai = Nilai ;
 	
-	cout << "Tugas Praktikum Latihan 4_3" << endl;
-    cout << "Nama	: Ryanda Deanova" << endl;
-    cout << "NIM	: 211011450036" << endl;
-    cout << "Kelas 	: 04TPLP001" <<endl;
+	cout << "Tugas Praktikum Pertemuan 4 lat4_3" << endl;
+    cout << "=====================================" << endl;
+    cout << "Nama  : Ryanda Deanova" << endl;
+    cout << "NIM   : 211011450036" << endl;
+    cout << "Kelas : 04TPLP001" << endl;
+    cout << "=====================================" << endl << endl;
     
 	cout<<"\nNilai Ptr_Nilai"<<Ptr_Nilai;
 	cout<<"\nAlamat array Nilai"<<Ptr_Nilai;

@@ -5,13 +5,12 @@ int main() {
     int num;
     int *ptr;
     
-    cout << "Buatlah contoh program sederhana menggunakan Pointer!" 
-		 << endl << endl;
-    
-    cout << "Tugas Pendahuluan Pertemuan 4" << endl;
-	cout << "Nama	: Ryanda Deanova" << endl;
-	cout << "NIM	: 211011450036" << endl;
-	cout << "Kelas 	: 04TPLP001" << endl << endl;
+   	cout << "Tugas Pendahuluan Pertemuan 4 No 4" << endl;
+    cout << "=====================================" << endl;
+    cout << "Nama  : Ryanda Deanova" << endl;
+    cout << "NIM   : 211011450036" << endl;
+    cout << "Kelas : 04TPLP001" << endl;
+    cout << "=====================================" << endl << endl;
 
     // Meminta pengguna memasukkan sebuah bilangan
     cout << "Masukkan sebuah bilangan: ";

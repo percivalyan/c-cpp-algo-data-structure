@@ -22,7 +22,12 @@ struct Mahasiswa {
 };
 
 int main() {
-	cout<<"Ryanda Deanova_211011450036_04TPLP001"<<endl<<endl;
+	cout << "Tugas Praktikum Pertemuan 3 lat3_4" << endl;
+    cout << "=====================================" << endl;
+    cout << "Nama  : Ryanda Deanova" << endl;
+    cout << "NIM   : 211011450036" << endl;
+    cout << "Kelas : 04TPLP001" << endl;
+    cout << "=====================================" << endl << endl;
     Mahasiswa Mhs[3]; //5 ke 3
     int i;
     for (i = 0; i < 3; i++) {

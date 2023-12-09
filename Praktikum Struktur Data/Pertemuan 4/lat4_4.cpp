@@ -9,10 +9,12 @@ int main (){
 	xPtr1 = &x;
 	xPtr2 = &xPtr1;
  
-	cout << "Tugas Praktikum Latihan 4_4" << endl;
-    cout << "Nama	: Ryanda Deanova" << endl;
-    cout << "NIM	: 211011450036" << endl;
-    cout << "Kelas 	: 04TPLP001" << endl << endl;
+	cout << "Tugas Praktikum Pertemuan 4 lat4_4" << endl;
+    cout << "=====================================" << endl;
+    cout << "Nama  : Ryanda Deanova" << endl;
+    cout << "NIM   : 211011450036" << endl;
+    cout << "Kelas : 04TPLP001" << endl;
+    cout << "=====================================" << endl << endl;
     
 	cout<<"Nilai x = "<<x<<endl;
 	cout<<"Nilai x = "<<*xPtr1<<endl;

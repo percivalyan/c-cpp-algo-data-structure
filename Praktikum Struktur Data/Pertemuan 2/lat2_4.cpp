@@ -7,6 +7,13 @@ int main(){
 	int Posisi [ 20 ];
 	int i, N, Bilangan, Banyak=0;
 	bool ketemu;
+	
+	cout << "Tugas Praktikum Pertemuan 2 lat2_4" << endl;
+    cout << "=====================================" << endl;
+    cout << "Nama  : Ryanda Deanova" << endl;
+    cout << "NIM   : 211011450036" << endl;
+    cout << "Kelas : 04TPLP001" << endl;
+    cout << "=====================================" << endl << endl;
 
 	cout<<"Masukan Banyaknya Bilangan = ";
 	cin>>N;

@@ -9,11 +9,12 @@ int main(){
 	int i, j, N;
 	int temp, awal, akhir, tengah, Bilangan ;
 	
-	cout<<"Praktikum Struktur Data"<<endl;
-	cout<<"Tugas Praktikum Pertemuan 6 Lat6_3"<<endl;
-    cout<<"Nama    : Ryanda Deanova"<<endl;
-    cout<<"NIM     : 211011450036"<<endl;
-    cout<<"Kelas   : 04TPLP001"<<endl<<endl;
+	cout << "Tugas Praktikum Pertemuan 6 lat6_3" << endl;
+    cout << "=====================================" << endl;
+    cout << "Nama  : Ryanda Deanova" << endl;
+    cout << "NIM   : 211011450036" << endl;
+    cout << "Kelas : 04TPLP001" << endl;
+    cout << "=====================================" << endl << endl;
     
 	//proses penginputan data
 	cout<<"Banyak bilangan : ";

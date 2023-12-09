@@ -2,9 +2,11 @@
 using namespace std;
 void Identitas() {
     cout << "Tugas Akhir Pertemuan 6" << endl;
-    cout << "Nama    : Ryanda Deanova" << endl;
-    cout << "NIM     : 211011450036" << endl;
-    cout << "Kelas   : 04TPLP001" << endl << endl;
+    cout << "=====================================" << endl;
+    cout << "Nama  : Ryanda Deanova" << endl;
+    cout << "NIM   : 211011450036" << endl;
+    cout << "Kelas : 04TPLP001" << endl;
+    cout << "=====================================" << endl << endl;
 }
 int main() {
     int angka, banyak = 0;

@@ -5,6 +5,7 @@ using namespace std;
 int main() {
 	int arr[2][2][2];
 	
+	cout << "Tugas Pendahuluan Pertemuan 2" << endl;
 	cout << "Program Sederhana Array Tiga Dimensi!" << endl;
     cout << "=====================================" << endl;
     cout << "Nama  : Ryanda Deanova" << endl;
